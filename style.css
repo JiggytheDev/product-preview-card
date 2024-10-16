@@ -125,6 +125,21 @@ del {
     text-align: center;
 }
 
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.attribution a:focus {
+    color: #000;
+    text-decoration: underline;
+}
+
 
 @media (max-width: 572px) {
 
@@ -171,9 +186,4 @@ del {
         min-height: 22rem;
     }
 
-    .attribution {
-        text-align: center;
-        font-size: 17px;
-        font-weight: 500;
-        color: #333;
-    }
+    
