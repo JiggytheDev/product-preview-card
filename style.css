@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: hsl(159, 69%, 14%)
 }
 
 .container {
@@ -84,6 +84,14 @@ button  img {
     margin-right: .8rem ;
 }
 
+button:focus{
+    background-color: hsl(159, 69%, 14%);
+}
+
+button:hover {
+    background-color: hsl(159, 69%, 14%);
+}
+
 ins {
     font-size: 1.5rem;
     font-weight: 700;
@@ -104,6 +112,7 @@ del {
     max-width: 15rem;
 }
 
+
 .box:nth-child(2) {
     border-radius: 0px 12px 12px 0px;
     max-height: 22rem;
@@ -118,14 +127,43 @@ del {
 
 
 @media (max-width: 572px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100;
+        margin-bottom: 5rem;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        align-items: center;
+        border-radius: 12px;
+        height: 100vh;
+        width: 100vw;
     }
 
-    .box:nth-child(1) img{
-        border-radius: 0px;
-        width: 16rem;
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    .box:nth-child(1) img {
+        width: 15rem;
+        height: 12rem;
+        border-radius: 12px 12px 0px 0px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -10rem;
+        background-size: cover;
     }
 
     .box:nth-child(2) {
